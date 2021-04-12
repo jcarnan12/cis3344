@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cstyles.css" rel="stylesheet" />
+    <title>Leave a Review!</title>
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="covid.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Activities
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="indoor.html">Indoor</a>
+                <a href="outdoor.html">Outdoor</a>
+            </div>
+        </div>
+        <a href="eat.html">Restaurants</a>
+        <a href="add.html">Add Review</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                How It Works
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="tutorial.html">Application Technology</a>
+            </div>
+        </div>
+        <a href="about.html">About Us</a>
+    </div>
+
+        <br />
+        <form method="post" action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuj13232@temple.edu">
+            
+            <h2>Leave a Review!</h2>
+            <div>
+                First Name<br />
+                <input type="text" id="fname" name="fname" required placeholder="Your name.." />
+            </div>
+            <div>
+                What type of establishment did you go to?<br />
+                <select name="act" id="act">
+                    <option></option>
+                    <option>Restaurant</option>
+                    <option>Indoor Activity</option>
+                    <option>Outdoor Activity</option>
+                </select>
+            </div>
+            <div>
+                Rate your experience (1-5)<br />
+                <select name="rate" id="rate" required>
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div>
+                Name of Establishment/Activity <br />
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+                <br />
+                Pros<br />
+                <textarea rows="3" cols="50" name="textbox" form="usrform">
+ </textarea><br />
+            </div>
+            <br />
+            <div style="padding-bottom: 18px;">
+                Cons<br />
+<textarea rows="3" cols="50" name="textbox" form="usrform"> </textarea><br />
+            </div>
+            <div>
+                <br />
+                Please Leave a Full Review <br />
+<textarea rows="10" cols="50" name="textbox" form="usrform"> </textarea><br />
+            </div>
+            <div>
+                <br />
+                Would you recommend this place?<br />
+                <input type="radio" id="rec" name="data_9" value="Yes" /> Yes<br />
+                <input type="radio" id="rec1" name="data_9" value="No" /> No</><br />
+                <input type="radio" id="rec2" name="data_9" value="Maybe" /> Maybe<br />
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+
+</body>
+</html>
