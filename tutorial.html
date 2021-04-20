@@ -4,35 +4,190 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="cstyles.css" rel="stylesheet" />
-    <title>How it Works</title>
+    <title>Application Development</title>
 </head>
 <body>
     <div class="navbar">
-        <a href="covid.html">Home</a>
-        <a href="eat.html">Restaurants</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                Activities
-            </button>
-            <div class="dropdown-content">
-                <a href="indoor.html">Indoor</a>
-                <a href="outdoor.html">Outdoor</a>
-            </div>
-        </div>
-        <a href="add.html">Add Review</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                How It Works
-            </button>
-            <div class="dropdown-content">
-                <a href="tutorial.html">Application Technology</a>
-            </div>
-        </div>
-        <a href="about.html">About Us</a>
+        <a href="#content">WebAssembly</a>
+        <a href="#content-section">Blazor</a>       
+        <a href="#tutorial">Tutorial</a>
+        <a href="#summary"> Summary/Resources</a>
+        <a href="#about">About Us</a>
+        
     </div>
 
-    <h1>How To Develop an Application Using Web Assembly</h1>
-    <h2> 1. </h2>
 
+    <section id="content">
+        <div class="content">
+
+            <h1>Application Development</h1>
+            <h2> Web Assembly </h2>
+            <h3> History</h3>
+            <p>
+                WebAssembly was first announced in 2015, and the first demonstration was executing Unity 's Angry Bots in
+                Firefox, Google Chrome, and Microsoft Edge. The goal of WebAssembly was to have a more efficient
+                Javascript to support large apps like online video games. Since the WebAssembly file is very similar to C or Machine Language,
+                it is fast in execution, which makes it a powerful tool for running heavy applications like Video Games, Video Files,
+                3D models, Porting Desktop Applications, etc.
+            </p>
+            <h3>Purpose</h3>
+            <p>
+                WebAssembly (often shortened to Wasm, or just WA) is an open standard that defines a portable binary-code format
+                for executable programs. WebAssembly is now supported in all major browsers e.g. recent versions of FireFox, Google Chrome, Safari, and Microsoft Edge.
+                The goal of WebAssembly is to allow developers to run large complex applications on the web without plugins.
+                WASM is a new type of code, which is written in .wasm format and is very close to Machine language.
+                The Wasm file is converted into a binary instruction (written in 0s and 1s) and then compiled into a webpage.
+            </p>
+            <h3> Advantages vs Disadvantages </h3>
+            <p> There are several advantages to the WASM format:</p>
+            <ul>
+                <li>
+                    Easy to understand - Developers don't have to code in WebAssembly but instead compile in it.
+                </li>
+                <li>
+                    Multiple Language support -  Languages like C, C++, Rust, Go can now compile the code to WebAssembly and run the same in web browsers. Reduces the need for JavaScript.
+                </li>
+                <li>
+                    Easy to Debug - You can also get your code in text format, that is easy to read and debug.
+                </li>
+            </ul>
+            <p>
+                Along with small disadvantages:
+            </p>
+            <ul>
+                <li>
+                    It is dependent on javascript to interact with the Document Object Model (DOM).
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+    <section id="content-section">
+        <div class="content-section">
+
+            <h2>Blazor</h2>
+            <h3>History</h3>
+            <p>
+                Blazors History Blazor started off as a personal project created by a
+                Microsoft employee, Steve Sanderson. He first presented it at NDC Oslo in 2017. This first version was built upon an
+                interpreted .NET CIL (Common Intermediate Language) runtime called "DotNetAnywhere".
+                On May 19th 2020, Blazor WebAssembly 3.2.0 was released by Microsoft,
+                which is the fully-featured and supported release of Blazor WebAssembly
+                that is ready for production use.
+            </p>
+
+            <h3>Purpose</h3>
+
+            <p>
+                Blazor WebAssembly is a single-page app framework for building interactive client-side web apps with.NET.
+                Blazor is a new Web UI framework that uses C#, Razor and HTML with the WebAssembly W3C standard.
+                It helps to build interactive web pages with C# and rather than Javascript.
+                You can implement Blazor UI components using a combination of .NET code and Razor syntax:
+                an medly of HTML and C#. Blazor components can seamlessly handle UI events,
+                bind to user input, and efficiently render UI updates
+            </p>
+            <h3>Connection to CIS 3344</h3>
+            <p>
+                In our project we used Blazor to take full advantage of WebAssembly. We developed our html, css and razor files
+                to build our app with Blazor, then we were able to put those files into WASM in order for it to run in the browser.
+                In our first two lab assignments we were tested on our HTML, CSS and ability to create an SPA. Blazor is
+                focused on all three of those technologies. Blazor provides everything we need to create a high-quality web applications.
+            </p>
+
+            <h3> Get Started: Install</h3>
+            <p>
+                <ol>
+                    <li>
+                        Install the latest .Net Core 3.0 Preview version and verfiy the latest version successfully install in machine using .Net Core cli,
+
+
+                    </li>
+                    <br />
+                    <img src="images/install1.png" />
+
+                    <li>
+                        Create boilerplate code using the following commands:
+
+                        <img src="images/install2.png" />
+                    </li>
+                    <br />
+                    <li>
+                        Go to your Web app folder that you just created --> build and run it
+                        <img src="images/install3.png" />
+                        <br />
+                        <img src="images/install4.png" />
+                    </li>
+
+                </ol>
+            </p>
+
+            <h3>Install Succeeded!</h3>
+            <p>
+                If the installion process succeeded, your command prompt should read:
+                <img src="images/complete.png" />
+            </p>
+
+
+
+        </div>
+        <section id="summary">
+            <div class="content-section">
+                <h2>
+                    Summary
+                </h2>
+                <p>
+                    The Blazor framework runs through web standards, eliminating the need to install any 
+                    plugins for it to work. All the code is executed in the browser itself using a .NET runtime framework implemented in WebAssembly.
+                </p>
+                <h3>
+                    Resources
+                   
+                </h3>
+                <p>
+                    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>
+                    <a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0">Blazor Overview</a>
+                    <a href="https://webassembly.org/">Web Assembly</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/WebAssembly">Web Assembly</a>
+
+
+                </p>
+
+            </div>
+        </section>
+
+
+        <section id="about">
+            <h1>About Us</h1>
+            </div>
+        </section>
+        <h2>Meet the Developers</h2>
+        <img src="images/jordanaka.jpeg" style="width:300px; height:300px;" />
+        <p>
+            Nathaniel and Jordan are both junior Information Science & Technology majors at Temple University.
+            While participating in the CIS 3344 course, Client-Side Scripting for Web, they were given the
+            assignment to develop an app using a framework of their choice. After brainstorming topics,
+            they landed on creating an app that helps people find fun Covid-19 safe activities during
+            the recent pandemic. We developed this app through Blazor WebAssembly which allows us to compile HTML, CSS
+            and razor files onto different browsers.
+        </p>
+        <br />
+
+        <h2>Our Goal</h2>
+        <p>
+            We are often looking for new places to go and activities. With the effect of
+            being locked down due to Covid, that desire has grown even stronger. However, that
+            thirst can lead to us prolonging life with Covid-19 if people aren’t taking the necessary measures.
+            We propose to develop an application that allows you to search through top-rated nearby restaurants and other social environments.
+            What makes this application a bit different is that most of the content will be user-generated and be more geared to
+            showcasing places that are conscious of the fact that we are dealing with a global pandemic still.
+            We will start by adding our selection of locations that are open and complying with CDC guidelines for operation as a
+            foundation. From there, users would be able to be able to suggest places that should be listed. For further verification,
+            we will implement an rating system that allows them to leave reviews of the location and whether they actually are
+            compliant with social distancing measures. Locations that receive consistent negative reviews or don’t practice proper
+            social distancing measures will be removed the site. It is important for people to be able to have an avenue of social
+            interaction while making sure that it won’t be at the cost of public safety.
+        </p>
+    </section>
 </body>
 </html>
