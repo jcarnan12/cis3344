@@ -1,0 +1,204 @@
+h1 {
+
+    color: darkslategrey;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: darkslategrey;
+    text-align: center;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%
+}
+
+h3 {
+    color: darkslategrey;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p, h3, ol, ul, a {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial Arial, Helvetica, sans-serif;
+    
+}
+
+ol, ul {
+    font-size:20px;
+}
+img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align:center;
+    /*border: 3px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 4px;*/
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+    /* Links inside the navbar */
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: darkblue;
+    }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-list-small {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1050px;
+    padding: 0;
+}
+
+    .image-list-small li {
+        display: inline-block;
+        width: 300px;
+        margin: 0 12px 30px;
+    }
+        .image-list-small li > a {
+            display: block;
+            text-decoration: none;
+            background-size: cover;
+            /*background-repeat: no-repeat;*/
+            height: 180px;
+            margin: 0;
+            padding: 0;
+            border: 4px solid #ffffff;
+            outline: 1px solid #d0d0d0;
+            box-shadow: 0 2px 1px #DDD;
+            transition: .25s;
+        }
+        .image-list-small li img {
+            width: 100%; /* To make the images responsive */
+            height: auto;
+        }
+        /*.image-list-small li > a:hover {
+            transform: scale(1.1);
+            transition: .25s;
+        }*/
+    .image-list-small .details {
+        margin-top: 13px;
+    }
+        .image-list-small .details h3 {
+            display: block;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+            .image-list-small .details h3 a {
+                color: #303030;
+                text-decoration: none;
+            }
+        .image-list-small .details .image-author {
+            display: block;
+            color: #717171;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+@media only screen and (max-wdith: 640px) {
+    .image-list-small {
+        max-width: 100%;
+    }
+
+        .image-list-small li > a {
+            width: 50%;
+        }
+}
+
+.content-section {
+    padding: 20px;
+}
